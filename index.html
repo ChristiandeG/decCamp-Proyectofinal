@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links de fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <!-- Link de Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Link de Css -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Codepen</title>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegacion de la parte superior -->
+        <nav class="my">
+            <!-- El nav esta dividido en 3 bloques llamados nav-bloque(left or mid or right)-->
+            <div class="nav-bloqueleft mb">
+                <!-- Bloque del logo -->
+                <div class="nav-bloqueleft_logo mr">
+                    <a href="index.html"><img src="https://assets.codepen.io/t-1/codepen-logo.svg" alt="CodePen Logo as SVG" /></a>
+                </div>
+            </div>
+            <div class="nav-bloquemid mb">
+                <!-- Bloque explore dividido en 2 partes. Superior e inferior -->
+                <div class="nav-bloquemid_seccionsup mr roboto">
+                    <h4>EXPLORE</h4>
+                </div>
+                <div class="nav-bloquemid_seccioninf ubuntu mr"> 
+                    <a href="Pens"><strong>Pens</strong></a>
+                    <a href="Project"><strong>Project</strong></a>
+                    <a href="Post"><strong>Posts</strong></a>
+                    <a href="Collections">Collections</a>
+                    <a class= drop href="Sparks">Sparks&nbsp;<span class="material-symbols-outlined flecha">
+                        expand_more
+                    </span></a>  
+                </div>
+            </div>
+            <div class="nav-bloqueright ubuntu mb">
+                <!-- Bloque login dividido en 3 partes -->
+                <div class="nav-bloqueright_login mr">
+                    <a href="desplegable create">Create</a>
+                    <span class="material-symbols-outlined flecha">
+                        expand_more
+                    </span>
+                </div>
+                <!-- Este bloque lo llamamos diferente porque tendra diferentes caracteristicas -->
+                <div class="nav-bloqueright_loginlupa mr">
+                    <span class="material-symbols-outlined lupa">
+                        search
+                    </span>
+                </div>
+                <div class="nav-bloqueright_login mr">
+                    <a href="Log in">Log in</a>
+                </div>
+                <div class="nav-bloqueright_login mr">
+                    <a href="SignUp">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Seccion que engloba la mid-page. Esta divido en 2 bloques, derecha e izquierda -->
+    <section class="my">
+        <div class="sectionderecha mb">
+            <!-- Seccion derecha parte superior. El articulo -->
+            <div class="sectionderecha_article mr">
+                <p class="roboto">CodePen is a <strong>social development environment</strong> for front-end designers and developers. <img src="recursos\mano.png" alt="saludo"></p>
+                <p class="ubuntu">It,s the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
+            
+            </div>
+            <!-- Seccion derecha parte inferior. 2 cajas -->
+            <div class="sectionderecha_inf ubuntu">
+                <div class="sectionderecha_inf_derecha mr">
+                    <a href="Singup"><strong>Sign Up for Free</strong></a>
+                </div>
+                <div class="sectionderecha_inf_izquierda mr">
+                    <a href="Learn"><strong>Learn More</strong></a>
+                </div>
+            </div>
+        </div>
+        <!-- Seccion izquierda. Dividida en 2 cajas. Superior e inferior -->
+        <div class="sectionizquierda mr">
+            <div class="sectionizquierda_sup ubuntu">
+                <h4>This is <span>CodePen Projects</span>!</h4>
+            </div>
+            <div class="section-izquierda_inf mr">
+                <img src="recursos\img1.png " alt="img1">
+            </div>
+        </div>
+    </section>
+    <!-- Barra de navegacion de la parte inferior. Dividido en 4 cajas -->
+    <footer>
+        <div class="footer roboto mb">
+           <div class="footer-cajas mr">
+                <p>CodePen for <span><strong>TEAMS</strong></span></p>
+            </div>
+            <div class="footer-cajas mr">
+                <p>CodePen for <span><strong>EDUCATION</strong></span></p>
+            </div>
+            <div class="footer-cajas mr">
+                <p>CodePen for <span><strong>PRIVACY</strong></span></p>
+            </div>
+            <div class="footer-cajas mr">
+                <p>CodePen for <span><strong>WRITING</strong></span></p>
+            </div>
+        </div>      
+    </footer>
+</body>
+</html>

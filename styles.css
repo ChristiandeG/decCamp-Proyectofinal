@@ -1,0 +1,302 @@
+/* Estos stylos son propios para la ayuda en flexbox */
+/* .my{
+    outline: yellow 2px solid;
+}
+.mb {
+    outline: blue 2px solid;
+}
+.mr {
+    outline: red 2px solid;
+} */
+
+
+/* Fuentes */
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Estilo general del cuerpo de la pagina */
+body{
+    background: linear-gradient(to left, black, #5c5c5c);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/* Estilo general del nav */
+nav {
+    max-width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* El nav esta dividido en 3 bloques. left/mid/right */
+.nav-bloqueleft {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bloqueleft > .nav-bloqueleft_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+/* Invert para poner el logo de color blanco */
+.nav-bloqueleft > .nav-bloqueleft_logo img {
+    filter: brightness(0) invert(1);
+    width: 80%;
+}
+/* El bloque del medio del nav esta divido en 2. Superior en inferior */
+.nav-bloquemid {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    font-size: 1.3em;
+}
+
+.nav-bloquemid > .nav-bloquemid_seccionsup {
+    max-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.nav-bloquemid > .nav-bloquemid_seccionsup h4 {
+    color: rgb(252, 241, 90);
+    padding-left: 30px;
+}
+.nav-bloquemid > .nav-bloquemid_seccioninf {
+    max-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-bloquemid > .nav-bloquemid_seccioninf a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+.nav-bloquemid > .nav-bloquemid_seccioninf .drop {
+    display: flex;
+    color: #828282;
+    padding-left: 50px;
+}
+/* Bloque derecho del nav */
+.nav-bloqueright {
+    width: 37.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-bloqueright > .nav-bloqueright_login {
+    display: flex;
+    padding: 17px 30px;
+    margin-left: 20px;
+    background-color: #3E3C3C;
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+/* Funcionalidad de los botones del Nav */
+.nav-bloqueright > .nav-bloqueright_login:hover{
+    background-color:grey;
+    color: #3E3C3C;
+}
+.nav-bloqueright > .nav-bloqueright_loginlupa {
+    color: #828282;
+    background-color: black;
+    margin-left: 15px;
+}
+
+.nav-bloqueright > .nav-bloqueright_login a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bloqueright > .nav-bloqueright_login > .flecha {
+    color: rgb(69, 180, 69);
+    font-size: 1.5em;
+}
+
+.nav-bloqueright > .nav-bloqueright_loginlupa > .lupa {
+    font-size: 3em;
+}
+
+/* Estilos para la seccion del medio de la landing page*/
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Estilos para la parte derecha de la seccion del medio. Esta dividida en 2. Derecha/Izquierda */
+.sectionderecha{
+    width: 52%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 15px 50px 30px 70px;
+}
+.sectionderecha_article p{
+    color: white;
+    font-size: 2.9em;  
+}
+/* Estilos para el segundo parrafo del la seccion derecha del section */
+.sectionderecha_article p:nth-child(2){
+    font-size: 2em;
+    width: 80%;
+}
+.sectionderecha_article img{
+    width: 50px;
+}
+.sectionderecha_inf{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+
+}
+.sectionderecha_inf_derecha{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 180, 69);
+    margin-right: 30px; 
+    border-radius: 5px; 
+}
+.sectionderecha_inf_derecha:hover{
+    background-color: black;
+}
+.sectionderecha_inf_izquierda{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
+}
+/* Funcion boton de la seccion del medio */
+.sectionderecha_inf_izquierda:hover{
+    background-color: rgb(69, 180, 69);
+}
+.sectionderecha_inf_derecha a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+/* Funcion boton de la seccion del medio */
+
+.sectionderecha_inf_derecha a:hover{
+    color: rgb(69, 180, 69);
+}
+.sectionderecha_inf_izquierda a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+.sectionderecha_inf_izquierda a:hover{
+    color: black;
+}
+.sectionizquierda{
+    width: 39%;
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 10px;
+}
+.sectionizquierda_sup h4{
+    color:white;
+}
+.sectionizquierda_sup{
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+    height: 40px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+.sectionizquierda_sup h4 span{
+    color: rgb(147, 147, 241);
+}
+.section-izquierda_inf img{
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos para el footer */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer-cajas{
+    width: 24.7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px white solid;
+    background-color: #3E3C3C; 
+    font-size: 1.3em; 
+}
+.footer-cajas span{
+    font-size: 1.5em;
+}
+/* Media querys*/
+@media (max-width: 1366px) {
+    .nav-bloqueright {
+        width: 39%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+@media (max-width: 1366px) {  
+    .sectionderecha{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionizquierda{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    .sectionderecha_inf_derecha{
+        width: 80%;
+    }
+    .sectionderecha_inf_izquierda{
+        width: 80%;
+    }
+}
+@media (max-width: 1257px){
+    .nav-bloquemid > .nav-bloquemid_seccionsup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bloquemid > .nav-bloquemid_seccioninf {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+  
